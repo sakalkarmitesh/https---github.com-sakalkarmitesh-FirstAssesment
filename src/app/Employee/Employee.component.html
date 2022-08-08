@@ -1,0 +1,72 @@
+<h1 style="font-size: 40px; font-weight: bold;" class="m-3 d-flex justify-content-center text-primary ">Employee Form
+</h1>
+
+<div class="bg-success p-2 text-dark bg-opacity-10">
+    <form class="example-form m-5">
+        <div class=" row m-4">
+            <div class="col-md-4">
+
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>FirstName</mat-label>
+                    <!-- <input type="text" matInput placeholder="Ex. Tom" name="fname" ngModel> -->
+                    <input required id="fullname" type="text" [(ngModel)]='text' name="fullname" matInput>
+
+                </mat-form-field> <br>
+
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>MiddleName</mat-label>
+                    <!-- <input type="text" matInput placeholder="Ex. Tom" name="fname" ngModel> -->
+                    <input id="middleName" type="text" name="middlename" matInput>
+
+                </mat-form-field> <br>
+
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>LastName</mat-label>
+                    <!-- <input type="text" matInput placeholder="Ex. Tom" name="fname" ngModel> -->
+                    <input id="lastName" type="text" name="lastname" matInput>
+
+                </mat-form-field> <br>
+
+                <mat-form-field appearance="fill">
+                    <mat-label>Gender</mat-label>
+                    <select matNativeControl required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+
+                    </select>
+                </mat-form-field>
+
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Age</mat-label>
+                    <!-- <input type="text" matInput placeholder="Ex. Tom" name="fname" ngModel> -->
+                    <input required id="age" type="number" name="age" matInput>
+
+                </mat-form-field> <br>
+
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Address 1</mat-label>
+                    <!-- <input type="text" matInput placeholder="Ex. Tom" name="fname" ngModel> -->
+                    <input required id="address1" type="string" name="address1" matInput>
+
+                </mat-form-field> <br>
+
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Address 2</mat-label>
+                    <!-- <input type="text" matInput placeholder="Ex. Tom" name="fname" ngModel> -->
+                    <input required id="address2" type="number" name="address2" matInput>
+
+                </mat-form-field> <br>
+
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Pin Code</mat-label>
+                    <!-- <input type="text" matInput placeholder="Ex. Tom" name="fname" ngModel> -->
+                    <input required id="pin" type="number" name="pin" matInput>
+
+                </mat-form-field> <br>
+
+                
+                
+            </div>
+        </div>
+    </form>
+</div>
